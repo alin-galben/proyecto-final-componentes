@@ -1,0 +1,25 @@
+<div class="contenedor">
+    <div class="titulo">
+        Iniciar Sesión
+    </div>
+    <div class="alert alert-danger" role="alert" *ngIf='mensaje'>
+        <strong>{{mensaje}}</strong>
+      </div>
+    <form [formGroup]="formLogin" (submit)="submit()">
+        <div class="formulario" >
+            <div class="datos">
+                <input type="text" placeholder="E-mail" class="texto" id="email" formControlName="email">
+                <i class="far fa-envelope"></i>
+            </div>
+            <div class="datos">
+                <input type="password" placeholder="Contraseña" class="texto" id="pass" formControlName="password">
+                <i class="fas fa-key"></i>
+            </div>
+            <button class="btn btn-success btn-block w-100" type ="submit">Login</button>
+            <div class="registro">
+                ¿No tienes una cuenta? <a class="enlace_registro" href="/registro">Registrate</a>
+            </div>
+            
+        </div>
+    </form>
+</div>

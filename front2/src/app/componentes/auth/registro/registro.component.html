@@ -1,0 +1,30 @@
+
+<div class="contenedor">
+    <div class="titulo">
+        Registro
+    </div>
+    <div class="alert alert-danger" role="alert" *ngIf='mensaje_error'>
+        <strong>{{mensaje_error}}</strong>
+        <div class="alert alert-danger m-n2" role="alert" *ngIf="formRegistro.invalid && formRegistro.touched">
+            <p>E-Mail: {{formRegistro.get('email').errors | json}}</p>
+            <p>Contraseña: {{formRegistro.get('password').errors | json}}</p>
+          </div>
+      </div>
+    <form [formGroup]="formRegistro" (submit)="submit()">
+        <div class="formulario" >
+            <div class="datos">
+                <input type="email" placeholder="E-mail" class="texto" id="email" formControlName="email">
+                <i class="far fa-envelope"></i>
+            </div>
+            <div class="datos">
+                <input type="password" placeholder="Contraseña" class="texto" id="password" formControlName="password">
+                <i class="fas fa-key"></i>
+            </div>
+            <div class="datos">
+                <input type="password" placeholder="Repite la Contraseña" class="texto" id="password2" formControlName="password2">
+                <i class="fas fa-key"></i>
+            </div>
+            <button class="btn btn-success btn-block w-100" type ="submit">Registrarse</button>       
+        </div>
+    </form>
+</div>

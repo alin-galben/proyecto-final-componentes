@@ -1,0 +1,123 @@
+@import 'https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap';
+
+.contenedor {
+	max-width: 350px;
+	width: 100%;
+	height: auto;
+	background: rgba(255, 255, 255, 0.6);
+	padding: 60px 45px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 20px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+}
+
+.contenedor .titulo {
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 26px;
+	font-weight: bold;
+	color: teal;
+}
+
+.registro {
+	margin-top: 25px;
+}
+
+.enlace_registro {
+	color: rgb(35, 151, 93);
+}
+
+.enlace_registro:hover {
+	color: rgb(103, 201, 152);
+}
+
+.contenedor .formulario .datos {
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.contenedor .formulario .error {
+	position: relative;
+	margin-bottom: 0px;
+	visibility: hidden;
+}
+
+.contenedor .formulario .error_texto {
+	width: 100%;
+	padding: 13px;
+	padding-left: 37px;
+	border: none;
+	background: rgb(224, 134, 134);
+	border-radius: 5px;
+}
+
+.contenedor .formulario .error_texto::placeholder {
+	color: var(rgb(187, 20, 20));
+}
+
+.contenedor .formulario .error i {
+	position: absolute;
+	top: 11px;
+	left: 10px;
+	color: rgb(243, 200, 200);
+	font-size: 1;
+}
+
+.contenedor .formulario .texto {
+	width: 100%;
+	padding: 12px;
+	padding-left: 37px;
+	border: none;
+	background: #eeeeee;
+	border-radius: 5px;
+}
+
+.contenedor .formulario .fecha {
+	width: 100%;
+	padding: 12px;
+	padding-left: 37px;
+	border: none;
+	background: #eeeeee;
+	border-radius: 5px;
+	color: grey;
+}
+
+.contenedor .formulario .boton {
+	width: 70%;
+	margin: 20px auto 0;
+	background: #008080;
+	padding: 12px;
+	text-align: center;
+	border-radius: 25px;
+}
+
+.contenedor .formulario .boton:hover {
+	background-color: #00a0a0;
+	cursor: pointer;
+}
+
+.contenedor .formulario .boton label {
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.contenedor .formulario .datos i {
+	position: absolute;
+	top: 17px;
+	left: 10px;
+	color: grey;
+	font-size: 1;
+}
+
+.contenedor .formulario .datos .fa-birthday-cake {
+	position: absolute;
+	top: 12px;
+	left: 13px;
+	color: grey;
+	font-size: 1;
+}

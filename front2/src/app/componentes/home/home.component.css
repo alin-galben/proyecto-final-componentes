@@ -1,0 +1,41 @@
+.contenido {
+	background-image: url(https://i.pinimg.com/originals/1c/16/b5/1c16b56e4b97ef33b865b1ffdd51c0ec.jpg);
+	color: white;
+	background-size: 25px 50px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+}
+
+.titulo {
+	font-size: 100px;
+	padding-top: 200px;
+	margin-left: 50px;
+	width: 40%;
+}
+
+.subtitulo {
+	padding-top: 5px;
+	font-style: italic;
+	margin-left: 50px;
+	width: 40%;
+}
+
+.parrafo {
+	padding-top: 5px;
+	font-size: 20px;
+	margin-left: 50px;
+	width: 40%;
+}
+
+.botones {
+	padding-top: 5px;
+	margin-left: 50px;
+	width: 40%;
+}
+
+button {
+	margin-right: 20px;
+}
